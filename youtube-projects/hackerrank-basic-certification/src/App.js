@@ -28,15 +28,15 @@ function App() {
         <input type='text' onChange={changeNewTask} />
         <button onClick={addTask}>Done!</button>
       </div>
-      <>
+      <div>
       {
         todos.map((todo, key) =>  {
             return (
-                <Task todo={todo} index={key} eliminateTask={eliminateTask}/>
+                <Task key={key} todo={todo[0]} index={key} eliminateTask={eliminateTask}/>
             )
         })
       }
-      </>
+      </div>
     </div>
   );
 }
