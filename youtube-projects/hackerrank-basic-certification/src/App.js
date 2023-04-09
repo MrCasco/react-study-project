@@ -3,7 +3,8 @@ import './App.css';
 // Applications
 // import TodoList from './applications/TodoList';
 // import CatFacts from './applications/CatFacts';
-import Excuser from './applications/Excuser';
+// import Excuser from './applications/Excuser';
+import TicTacToe from './applications/TicTacToe';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
       {/* <TodoList /> */}
       {/* <CatFacts /> */}
-      <Excuser />
+      {/* <Excuser /> */}
+      <TicTacToe />
     </div>
   );
 }
