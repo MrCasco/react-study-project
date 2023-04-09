@@ -12,6 +12,10 @@
   width: 80%;
 }
 
-.task {
+.task-name {
   display: inline;
+}
+
+.task-body {
+  width: auto;
 }
