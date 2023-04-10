@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'h8k-components';
 
@@ -9,7 +9,7 @@ const title = "Sorting Articles";
 function App({articles}) {
   const [articlesList, setArticlesList] = useState(articles);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     let ret = articles.slice();
     ret.sort((article_st, article_nd) => {
       if (article_st.upvotes > article_nd.upvotes) {
